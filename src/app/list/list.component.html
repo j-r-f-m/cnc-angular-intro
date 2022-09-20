@@ -1,0 +1,13 @@
+<h2>My List Items</h2>
+<ul class="listitems">
+  <li *ngFor="let listItem of listitems">
+    <button type="button">
+      <span class="badge">{{listItem.id}}</span>
+      <span class="name">{{listItem.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<h2>{{listItem.name | uppercase}} Details</h2>
+<div><span>id: </span>{{listItem.id}}</div>
+<div><span>name: </span>{{listItem.name}}</div>
